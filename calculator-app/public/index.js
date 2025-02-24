@@ -178,7 +178,7 @@ const post_data = (
     state: state,
   };
 
-  fetch(`${process.env.API_URL}/v1/savings`, {
+  fetch(`${CONFIG.API_URL}/v1/savings`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
