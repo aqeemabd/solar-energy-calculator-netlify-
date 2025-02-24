@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar Energy Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+  </head>
+  <body>
+    <div class="main">
+      <img class="logo" src="./assets/img/logo.png" alt="" />
+      <div class="content">
+        <h2>
+          Rooftop Energy is at the forefront of Malaysia's solar energy
+          revolution, dedicated to making sustainable energy solutions
+          accessible to all Malaysians. As a homegrown Malaysian company, we're
+          transforming how businesses approach energy consumption through
+          innovative solar technology solutions.
+        </h2>
+        <img class="mainKV" src="./assets/img/KLOnPhone.png" alt="" />
+      </div>
+    </div>
+
+    <div class="calculator_wrapper">
+      <div class="inputs">
+        <div>
+          <h4>Total current bill:</h4>
+          <input
+            type="number"
+            id="tnb_amount"
+            class="input-style input-field"
+            placeholder="Enter amount"
+          />
+        </div>
+        <div>
+          <h4>State:</h4>
+          <select name="state" id="state" class="input-style-dd">
+            <option value="selangor">Selangor</option>
+            <option value="kl">Kuala Lumpur</option>
+            <option value="putrajaya">Putrajaya</option>
+            <option value="negeri-sembilan">Negeri Sembilan</option>
+            <option value="melaka">Melaka</option>
+            <option value="johor">Johor</option>
+            <option value="pahang">Pahang</option>
+            <option value="terengganu">Terengganu</option>
+            <option value="kelantan">Kelantan</option>
+            <option value="perak">Perak</option>
+            <option value="kedah">Kedah</option>
+            <option value="perlis">Perlis</option>
+            <option value="penang">Penang</option>
+            <option value="sabah">Sabah</option>
+            <option value="sarawak">Sarawak</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc_btn_wrapper">
+        <button type="button" id="calc_savings_btn" class="button-primary">
+          Calculate Savings
+        </button>
+      </div>
+    </div>
+
+    <div class="amount_wrapper">
+      <div>
+        <div class="systemSizeDiv">
+          <h4>System Size</h4>
+          <h4 id="systemSize"></h4>
+        </div>
+        <div class="totalSystemCostDiv">
+          <h4>Total System Cost</h4>
+          <h4 id="totalSystemCost"></h4>
+        </div>
+      </div>
+      <div>
+        <div class="targetMonthlyPaymentDiv">
+          <h4>Target Monthly Payment</h4>
+          <h4 id="targetMonthlyPayment"></h4>
+        </div>
+        <div class="monthlyPaymentDiv">
+          <h4>Monthly Loan Payment</h4>
+          <h4 id="monthlyPayment"></h4>
+        </div>
+      </div>
+    </div>
+
+    <div id="savingsModal" class="modal">
+      <div class="modal-content">
+        <h3 style="color: black">Let’s Talk Solar Savings!</h3>
+        <div>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input-style-modal input-field"
+            placeholder="Enter your name"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-style-modal input-field"
+            placeholder="Enter your email"
+          />
+          <button type="button" id="submit" class="button-primary">
+            Submit
+          </button>
+        </div>
+        <p id="successMessage" style="display: none; color: green">
+          Request submitted successfully!
+        </p>
+      </div>
+    </div>
+
+    <footer>
+        <div class="contact">
+            <p>Sales: <a href="mailto:sales@rooftop.my">sales@rooftop.my</a></p>
+            <p>Partnerships: <a href="mailto:partnerships@rooftop.my">partnerships@rooftop.my</a></p>
+            <p>Investors: <a href="mailto:investors@rooftop.my">investors@rooftop.my</a></p>
+        </div>
+        <div class="copyright"><p>Rooftop Energy © 2024</p></div>
+    </footer>
+  </body>
+</html>
+<script src="./index.js"></script>
